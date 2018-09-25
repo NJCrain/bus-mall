@@ -1,0 +1,25 @@
+body {
+  width: 100%;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+main {
+  margin: auto;
+  text-align: center;
+}
+
+.product {
+  margin: 10px;
+ max-width: 300px;
+}
+
+ul{
+  float: left;
+  list-style-type: disc;
+  margin: 2%;
+}
