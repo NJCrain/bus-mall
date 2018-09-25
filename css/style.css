@@ -22,4 +22,5 @@ ul{
   float: left;
   list-style-type: disc;
   margin: 2%;
+  text-align: left;
 }
