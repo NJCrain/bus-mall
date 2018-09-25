@@ -1,7 +1,7 @@
 'use strict';
 
 var totalClicks = 0;
-var maxClicks = 5;
+var maxClicks = 25;
 var onScreen = document.getElementsByClassName('product');
 var previousAlts = new Array(onScreen.length);
 
