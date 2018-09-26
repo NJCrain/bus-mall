@@ -17,10 +17,3 @@ main {
   margin: 10px;
  max-width: 300px;
 }
-
-ul{
-  float: left;
-  list-style-type: disc;
-  margin: 2%;
-  text-align: left;
-}
