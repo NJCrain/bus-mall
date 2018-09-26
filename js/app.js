@@ -81,6 +81,7 @@ function pictureChanger(e) {
   }
 }
 
+// fills in arrays with data to label and add data to a chart and then draws a horizontal bar chart on the screen
 function displayData() {
   var ctx  = document.getElementById('data').getContext('2d');
   var labels = [];
