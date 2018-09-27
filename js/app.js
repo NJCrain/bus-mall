@@ -88,35 +88,26 @@ function pictureChanger(e) {
 
 // fills in arrays with data to label and add data to a chart and then draws a horizontal bar chart on the screen
 function displayData() {
-  var ctx = document.getElementById('data').getContext('2d');
+  var ctx  = document.getElementById('data').getContext('2d');
   var labels = [];
   var data = [];
   var colors = [];
 
-  for (var i = 0; i < Product.allProducts.length; i++) {
+  for(var i = 0; i < Product.allProducts.length; i++) {
     labels[i] = Product.allProducts[i].altText;
     data[i] = Product.allProducts[i].clicks;
-    colors[i] =
-      'rgb(' +
-      Math.floor(Math.random() * 256) +
-      ',' +
-      Math.floor(Math.random() * 256) +
-      ',' +
-      Math.floor(Math.random() * 256) +
-      ')';
+    colors[i] = 'rgb(' + Math.floor(Math.random()*256) + ',' + Math.floor(Math.random()*256) + ',' + Math.floor(Math.random()*256) + ')';
   }
 
   var myChart = new Chart(ctx, {
     type: 'horizontalBar',
     data: {
       labels: labels,
-      datasets: [
-        {
-          label: '# of votes',
-          data: data,
-          backgroundColor: colors
-        }
-      ]
+      datasets:[{
+        label: '# of votes',
+        data: data,
+        backgroundColor: colors
+      }]
     }
   });
 
